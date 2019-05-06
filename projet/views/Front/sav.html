@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+	<script src="script.js"></script>
 	<title>Kalthita | Distinctive and Original Socks</title>
 	<meta charset="UTF-8">
 	<meta name="description" content=" Divisima | eCommerce Template">
@@ -21,20 +22,15 @@
 	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
+	<!--<link rel="stylesheet" href="css/style.css"/>-->
+	<link rel="stylesheet" href="css/style2.css"/> 
+	
+	</head>
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
-	</div>
+	</div> 
 
 	<!-- Header section -->
 	<header class="header-section">
@@ -89,123 +85,47 @@
 	<!-- Header section end -->
 
 
-	<!-- Page info -->
-	<div class="page-top-info">
-		<div class="container">
-			<h4>Contact</h4>
-			<div class="site-pagination">
-				<a href="">Acceuil</a> /
-				<a href="">Contact</a>
-			</div>
-		</div>
-	</div>
-	<!-- Page info end -->
-
-
-	<!-- Contact section -->
-	<section class="contact-section">
+	<!-- sav section -->
+	<section class="sav-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 contact-info">
-					<h3>Contactez-nous</h3>
+				<div class="col-lg-6 sav-info">
+					<h3>Réclamation</h3>
 					<p>Avenue Habib Bourguiba, Tunis, Tunisie</p>
 					<p>+216 99 411 516</p>
 					<p>zouebi.anas@gmail.com</p>
-					<div class="contact-social">
-						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kalthita.tn/"><i class="fa fa-instagram"></i></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Kalthita.tn/"><i class="fa fa-facebook"></i></a>
-						<a href="mailto:zouebi.anas@gmail.com"><i class="fa fa-google"></i></a>
-					</div>
-					<form class="contact-form">
-						<input type="text" placeholder="Your name">
-						<input type="text" placeholder="Your e-mail">
-						<input type="text" placeholder="Subject">
-						<textarea placeholder="Message"></textarea>
-						<button class="site-btn">SEND NOW</button>
+					<form method="POST" name="sav" class="sav-form" action="add-sav.php" enctype="multipart/form-data" onsubmit="return validateForm()">
+						<input type="text" name="id" placeholder="ID" id="id">
+						<input type="text" name="prenom" placeholder="Nom et Prénom" id="prenom">
+						<input type="email" name="mail" placeholder="xxx@xxx.com" id="mail">
+						<input type="text" name="sujet" placeholder="Sujet" id="sujet">
+		                <br><br><input name="msg" placeholder="Message" id="msg">
+						<br><br><button type="submit" class="site-btn">SEND NOW</button>
 					</form>
+					
 				</div>
 			</div>
 		</div>
-		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.79833529515!2d10.177677015272005!3d36.79938527994863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd347243407b3f%3A0x1c4f78f0df9f6331!2sB%40Labs!5e0!3m2!1sfr!2stn!4v1551787401207" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-	</section>
-	<!-- Contact section end -->
-
-
-	<!-- Related product section -->
-	<section class="related-product-section spad">
+		<section class="demande-section">
 		<div class="container">
-			<div class="section-title">
-				<h2>Your Favorites</h2>
-			</div>
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<div class="tag-new">New</div>
-							<img src="./img/product/2.jpg" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<h6>$35,00</h6>
-							<p>Black and White Stripes Dress</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="./img/product/5.jpg" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<h6>$35,00</h6>
-							<p>Flamboyant Pink Top </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="./img/product/9.jpg" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<h6>$35,00</h6>
-							<p>Flamboyant Pink Top </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="./img/product/1.jpg" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<h6>$35,00</h6>
-							<p>Flamboyant Pink Top </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Related product section end -->
+				<div class="col-lg-6 sav-info">
+					<h3>Demande</h3>
+					<p>Avenue Habib Bourguiba, Tunis, Tunisie</p>
+					<p>+216 99 411 516</p>
+					<p>zouebi.anas@gmail.com</p>
+		<form class="demande-form" name="dem" method="POST" action="add-dem.php">
+		                <input type="text" name="id1" placeholder="ID" id="id">
+	                    <input type="text" placeholder="Nom et Prénom" name="nom1">
+						<input type="email" placeholder="xxx@xxx.com" name="mail1"> 		
+						<input type="text" placeholder="Sujet" name="sujet1">
+						<br><br><input type="text" placeholder="Message" name="msg1">
+						<br><br><button type="submit" class="site-btn">SEND NOW</button>
+					</form>
+	    </section>
+		    
 
-
-		<!-- Footer section -->
+<!-- Footer section -->
 	<section class="footer-section">
 		<div class="container">
 			<div class="footer-logo text-center">

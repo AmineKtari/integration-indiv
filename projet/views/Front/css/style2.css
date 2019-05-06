@@ -1562,7 +1562,7 @@ ol {
 }
 
 .product-details .p-stock span {
-	color: #3fc6e6;
+	color: #f51167;
 }
 
 .product-details .p-rating {
@@ -1842,7 +1842,7 @@ ol {
 }
 
 .cart-table .total-cost {
-	background: #3fc6e6;
+	background: #f51167;
 	margin: 0 -34px;
 	text-align: right;
 	padding: 22px 0;
@@ -2098,17 +2098,18 @@ ol {
   Contact Page
 ---------------------*/
 
-.contact-section {
+.sav-section {
 	padding-top: 80px;
 	padding-bottom: 0;
+	align-content: right;
 	position: relative;
 }
 
-.contact-info h3 {
+.sav-info h3 {
 	margin-bottom: 50px;
 }
 
-.contact-social {
+.sav-social {
 	display: -ms-flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2117,7 +2118,7 @@ ol {
 	padding-top: 20px;
 }
 
-.contact-social a {
+.sav-social a {
 	display: -ms-inline-flex;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -2140,13 +2141,13 @@ ol {
 	transition: all 0.4s;
 }
 
-.contact-social a:hover {
+.sav-social a:hover {
 	color: #fff;
 	background: #3fc6e6;
 }
 
-.contact-form input,
-.contact-form textarea {
+.sav-form input,
+.sav-form textarea {
 	width: 100%;
 	height: 44px;
 	border: none;
@@ -2155,28 +2156,95 @@ ol {
 	border-radius: 40px;
 	margin-bottom: 17px;
 	font-size: 14px;
+	position: relative;
 }
 
-.contact-form textarea {
+.sav-form textarea {
 	padding-top: 16px;
 	border-radius: 18px;
 	height: 175px;
 	margin-bottom: 32px;
+	position: relative;
 }
 
-.map {
+
+.demande-section {
+	padding-top: 80px;
+	padding-bottom: 0;
 	position: absolute;
-	width: calc(50% - 15px);
-	height: 100%;
-	right: 0;
-	top: 0;
-	background: #ddd;
+	top: 0px;
+	right: -1000px;
+	left: 400px;
+	height: auto;
+	
+
+	
 }
 
-.map iframe {
-	width: 100%;
-	height: 100%;
+.demande-info h3 {
+	margin-bottom: 50px;
 }
+
+.demande-social {
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 85px;
+	padding-top: 20px;
+}
+
+.demande-social a {
+	display: -ms-inline-flex;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 32px;
+	height: 32px;
+	background: #f0f0f0;
+	color: #414141;
+	font-size: 14px;
+	border-radius: 50%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: 12px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.demande-social a:hover {
+	color: #fff;
+	background: #3fc6e6;
+}
+
+.demande-form input,
+.demande-form textarea {
+	width: 100%;
+	height: 44px;
+	border: none;
+	padding: 0 18px;
+	background: #f0f0f0;
+	border-radius: 40px;
+	margin-bottom: 17px;
+	font-size: 14px;
+	
+
+}
+
+.demande-form textarea {
+	padding-top: 16px;
+	border-radius: 18px;
+	height: 175px;
+	margin-bottom: 32px;
+	
+} 
+
+
 
 /* ----------------
   Responsive

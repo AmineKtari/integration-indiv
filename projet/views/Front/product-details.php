@@ -66,7 +66,7 @@
 									<i class="flaticon-bag"></i>
 									<span>0</span>
 								</div>
-								<a href="./cart.html">Panier</a>
+								<a href="cart.php">Panier</a>
 							</div>
 						</div>
 					</div>
@@ -82,6 +82,7 @@
 					<li><a href="packs.php">Packs
 						<span class="new">New</span>
 					</a></li>
+					<li><a href="./sav.html">Service Après vente</a></li>
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -148,7 +149,7 @@ $listeProduits=$produit2C->afficherProduit();
 						<p>Quantité</p>
                         <div class="pro-qty"><input type="text" value="1"></div>
                     </div>
-					<a href="#" class="site-btn">Acheter</a>
+					<a href="cart.php?refe=<?php echo $row['Ref'];?>&prix_u=<?php echo $row['Prix'];?>" class="site-btn">Acheter</a>
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
 							<div class="panel-header" id="headingOne">

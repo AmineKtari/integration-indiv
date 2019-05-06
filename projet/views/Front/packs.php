@@ -72,7 +72,7 @@ $listePack=$pack1C->afficherPack();
 									<i class="flaticon-bag"></i>
 									<span>0</span>
 								</div>
-								<a href="./cart.html">Panier</a>
+								<a href="cart.php">Panier</a>
 							</div>
 						</div>
 					</div>
@@ -88,6 +88,7 @@ $listePack=$pack1C->afficherPack();
 					<li><a href="packs.php">Packs
 						<span class="new">New</span>
 					</a></li>
+					<li><a href="./sav.html">Service Après vente</a></li>
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -147,7 +148,7 @@ $listePack=$pack1C->afficherPack();
 								<div class="pi-pic">
 									<img src="showimage2.php?id=<?php echo $row['ref']; ?>">
 									<div class="pi-links">
-										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="cart.php?refe=<?php echo $row['ref'];?>&prix_u=<?php echo $row['prix'];?>" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>

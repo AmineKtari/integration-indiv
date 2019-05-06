@@ -72,7 +72,7 @@ $listeProduits=$produit1C->afficherProduit();
 									<i class="flaticon-bag"></i>
 									<span>0</span>
 								</div>
-								<a href="./cart.html">Panier</a>
+								<a href="cart.php">Panier</a>
 							</div>
 						</div>
 					</div>
@@ -88,6 +88,7 @@ $listeProduits=$produit1C->afficherProduit();
 					<li><a href="packs.php">Packs
 						<span class="new">New</span>
 					</a></li>
+					<li><a href="./sav.html">Service Après vente</a></li>
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -135,7 +136,7 @@ $listeProduits=$produit1C->afficherProduit();
 								<div class="pi-pic">
 									<a href="product-details.php?ref=<?php echo $row['Ref']; ?>"><img src="showimage.php?id=<?php echo $row['Ref']; ?>"></a>
 									<div class="pi-links">
-										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="cart.php?refe=<?php echo $row['Ref'];?>&prix_u=<?php echo $row['Prix'];?>" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
